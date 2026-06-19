@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secretaria Municipal de Infraestrutura | São Pedro de Alcântara</title>
+
+<meta name="description" content="Portal oficial da Secretaria Municipal de Infraestrutura de São Pedro de Alcântara - SC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+:root{
+    --verde:#00695c;
+    --verde-escuro:#004d40;
+    --verde-claro:#00897b;
+    --cinza:#f5f7fa;
+    --branco:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--cinza);
+    color:#333;
+}
+
+/* TOPO */
+
+.topbar{
+    background:var(--verde-escuro);
+    color:white;
+    text-align:center;
+    padding:8px;
+    font-size:14px;
+}
+
+header{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.1);
+}
+
+.header-container{
+    max-width:1300px;
+    margin:auto;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo img{
+    height:85px;
+}
+
+.logo-text h1{
+    color:var(--verde);
+    font-size:1.6rem;
+}
+
+.logo-text p{
+    color:#666;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:var(--verde);
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h2{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.25rem;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:16px 32px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* SEÇÕES */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--verde);
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+/* SERVIÇOS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:var(--verde);
+    margin-bottom:15px;
+}
+
+/* DESTAQUES */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stat h2{
+    color:var(--verde);
+    font-size:2.5rem;
+}
+
+/* GALERIA */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* NOTÍCIAS */
+
+.news{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
+
+.news-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.news-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.news-card-content{
+    padding:25px;
+}
+
+/* FORM */
+
+.formulario{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.formulario input,
+.formulario textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.formulario button{
+    background:var(--verde);
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* MAPA */
+
+iframe{
+    width:100%;
+    height:500px;
+    border:none;
+    border-radius:15px;
+}
+
+/* CONTATO */
+
+.contato{
+    background:var(--verde);
+    color:white;
+    border-radius:15px;
+    text-align:center;
+    padding:50px;
+}
+
+.contato p{
+    margin:10px 0;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:var(--verde-escuro);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    line-height:70px;
+    font-size:32px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+.header-container{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    text-align:center;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+.hero h2{
+    font-size:2.2rem;
+}
+
+.logo{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+Portal Oficial da Secretaria Municipal de Infraestrutura
+</div>
+
+<header>
+
+<div class="header-container">
+
+<div class="logo">
+
+<img src="https://cdn.pci.app.br/img/i/c82685628439093b1456ed5722e1c257.png"
+alt="Brasão de São Pedro de Alcântara">
+
+<div class="logo-text">
+<h1>Secretaria Municipal de Infraestrutura</h1>
+<p>São Pedro de Alcântara - Santa Catarina</p>
+</div>
+
+</div>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#obras">Obras</a>
+<a href="#noticias">Notícias</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h2>Infraestrutura para o Desenvolvimento do Município</h2>
+
+<p>
+A Secretaria Municipal de Infraestrutura trabalha diariamente para
+garantir melhores condições de mobilidade, manutenção das estradas,
+obras públicas, iluminação e qualidade de vida para a população
+de São Pedro de Alcântara.
+</p>
+
+<a href="https://wa.me/554832770122" class="btn" target="_blank">
+📱 Atendimento via WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section class="container" id="servicos">
+
+<h2 class="section-title">Serviços Prestados</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🚜 Estradas Rurais</h3>
+<p>Manutenção, patrolamento e recuperação das vias rurais.</p>
+</div>
+
+<div class="card">
+<h3>🏗 Obras Públicas</h3>
+<p>Construção, reforma e manutenção de estruturas públicas.</p>
+</div>
+
+<div class="card">
+<h3>💡 Iluminação Pública</h3>
+<p>Instalação e manutenção da iluminação do município.</p>
+</div>
+
+<div class="card">
+<h3>🌳 Conservação Urbana</h3>
+<p>Limpeza e manutenção de espaços públicos.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Indicadores</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>100+</h2>
+<p>Km de Estradas Mantidas</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Obras Concluídas</p>
+</div>
+
+<div class="stat">
+<h2>24h</h2>
+<p>Recebimento de Solicitações</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Compromisso com a Comunidade</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container" id="obras">
+
+<h2 class="section-title">Galeria de Obras</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80">
+
+</div>
+
+</section>
+
+<section class="container" id="noticias">
+
+<h2 class="section-title">Últimas Notícias</h2>
+
+<div class="news">
+
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80">
+
+<div class="news-card-content">
+<h3>Recuperação de Estradas Municipais</h3>
+<p>Espaço para publicação das ações e melhorias realizadas.</p>
+</div>
+
+</div>
+
+<div class="news-card">
+
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80">
+
+<div class="news-card-content">
+<h3>Novas Obras em Andamento</h3>
+<p>Divulgação de investimentos e melhorias para a comunidade.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Solicitação de Serviços</h2>
+
+<div class="formulario">
+
+<input type="text" placeholder="Nome Completo">
+
+<input type="email" placeholder="E-mail">
+
+<input type="text" placeholder="Endereço da Solicitação">
+
+<textarea rows="5" placeholder="Descreva a solicitação"></textarea>
+
+<button>Enviar Solicitação</button>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Localização</h2>
+
+<iframe src="https://maps.google.com/maps?q=Secretaria%20de%20Infraestrutura%20de%20São%20Pedro%20de%20Alcântara&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
+
+<br><br>
+
+<div style="text-align:center;">
+<a href="https://maps.app.goo.gl/ErLT6HtFoPFKNpsE6"
+target="_blank"
+class="btn">
+📍 Abrir no Google Maps
+</a>
+</div>
+
+</section>
+
+<section class="container" id="contato">
+
+<h2 class="section-title">Contato</h2>
+
+<div class="contato">
+
+<h3>Secretaria Municipal de Infraestrutura</h3>
+
+<p>Rua Nossa Senhora de Fátima</p>
+
+<p>São Pedro de Alcântara - SC</p>
+
+<p>CEP 88125-000</p>
+
+<p>Telefone: (48) 3277-0122</p>
+
+<p>E-mail: obras@pmspa.sc.gov.br</p>
+
+<br>
+
+<a href="https://wa.me/554832770122"
+target="_blank"
+class="btn">
+
+📱 Falar pelo WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Prefeitura Municipal de São Pedro de Alcântara
+<br>
+Secretaria Municipal de Infraestrutura
+
+</footer>
+
+<a href="https://wa.me/554832770122"
+target="_blank"
+class="whatsapp">
+📱
+</a>
+
+</body>
+</html>
