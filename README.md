@@ -1,3 +1,30 @@
+---
+
+## 🎓 Projeto Acadêmico
+
+Este projeto consiste em um **mockup (protótipo)** de um portal institucional para a **Secretaria Municipal de Infraestrutura de São Pedro de Alcântara - SC**.
+
+O desenvolvimento foi realizado com fins acadêmicos como parte das atividades do **Estágio Curricular Obrigatório** do curso de **Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)** da **Universidade do Estado de Santa Catarina (UDESC)**.
+
+O sistema possui caráter demonstrativo e foi desenvolvido para aplicar conceitos de:
+
+- Desenvolvimento Web com HTML5 e CSS3;
+- Design Responsivo (Responsive Web Design);
+- Prototipação de interfaces institucionais;
+- Organização de conteúdo e usabilidade;
+- Integração de serviços externos (Google Maps e WhatsApp);
+- Estruturação de projetos para ambientes governamentais e institucionais.
+
+**Observação:** Este projeto é um protótipo acadêmico (*mockup*) e não representa, necessariamente, o portal oficial em produção da Secretaria Municipal de Infraestrutura de São Pedro de Alcântara.
+
+---
+
+**Autor:** Pablo Idalgo Gonzalez  
+**Curso:** Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)  
+
+
+
+
 # 🏗️ Secretaria Municipal de Infraestrutura de São Pedro de Alcântara
 
 Portal institucional desenvolvido em **HTML5 e CSS3 puro** para a **Secretaria Municipal de Infraestrutura de São Pedro de Alcântara - SC**.
@@ -119,3 +146,6 @@ Este projeto possui caráter institucional e educacional.
 
 © Prefeitura Municipal de São Pedro de Alcântara - SC  
 Secretaria Municipal de Infraestrutura
+**Instituição:** Universidade do Estado de Santa Catarina (UDESC)  
+**Disciplina:** Estágio Curricular Obrigatório  
+**Ano:** 2026
