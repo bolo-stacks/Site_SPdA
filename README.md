@@ -1,52 +1,57 @@
----
-
-## 🎓 Projeto Acadêmico
-
-Este projeto consiste em um **mockup (protótipo)** de um portal institucional para a **Secretaria Municipal de Infraestrutura de São Pedro de Alcântara - SC**.
-
-O desenvolvimento foi realizado com fins acadêmicos como parte das atividades do **Estágio Curricular Obrigatório** do curso de **Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)** da **Universidade do Estado de Santa Catarina (UDESC)**.
-
-O sistema possui caráter demonstrativo e foi desenvolvido para aplicar conceitos de:
-
-- Desenvolvimento Web com HTML5 e CSS3;
-- Design Responsivo (Responsive Web Design);
-- Prototipação de interfaces institucionais;
-- Organização de conteúdo e usabilidade;
-- Integração de serviços externos (Google Maps e WhatsApp);
-- Estruturação de projetos para ambientes governamentais e institucionais.
-
-**Observação:** Este projeto é um protótipo acadêmico (*mockup*) e não representa, necessariamente, o portal oficial em produção da Secretaria Municipal de Infraestrutura de São Pedro de Alcântara.
-
----
-
-**Autor:** Pablo Idalgo Gonzalez  
-**Curso:** Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)  
-
-
-
-
 # 🏗️ Secretaria Municipal de Infraestrutura de São Pedro de Alcântara
 
-Portal institucional desenvolvido em **HTML5 e CSS3 puro** para a **Secretaria Municipal de Infraestrutura de São Pedro de Alcântara - SC**.
-
-O projeto foi criado com o objetivo de disponibilizar informações institucionais, facilitar o contato com a população e divulgar as ações e serviços prestados pela secretaria.
+> **Projeto Acadêmico – Estágio Curricular Obrigatório**
+>
+> Este projeto consiste em um **mockup (protótipo)** de um portal institucional para a **Secretaria Municipal de Infraestrutura de São Pedro de Alcântara - SC**, desenvolvido como parte das atividades do **Estágio Curricular Obrigatório** do curso de **Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)** da **Universidade do Estado de Santa Catarina (UDESC)**.
+>
+> O sistema possui caráter exclusivamente **acadêmico e demonstrativo**, tendo como objetivo aplicar conhecimentos de desenvolvimento web, design responsivo, prototipação de interfaces institucionais e integração de serviços externos.
 
 ---
 
-## 📸 Demonstração
+## 📖 Sobre o Projeto
 
-O site apresenta:
+O portal foi desenvolvido para simular um site institucional moderno para a Secretaria Municipal de Infraestrutura, centralizando informações sobre serviços prestados, notícias, formas de atendimento e canais de comunicação com a população.
 
-- 🏛️ Identidade visual com o brasão oficial do município;
-- 📱 Botão de atendimento via WhatsApp;
-- 🚜 Seção de serviços prestados pela secretaria;
-- 📊 Indicadores institucionais;
-- 🏗️ Galeria de obras;
-- 📰 Área de notícias;
-- 📝 Formulário de solicitação de serviços;
-- 📍 Integração com Google Maps;
-- 📞 Informações de contato;
-- 💻 Layout responsivo para computadores, tablets e smartphones.
+O projeto foi construído utilizando apenas **HTML5 e CSS3 puro**, priorizando simplicidade, organização do conteúdo e responsividade para diferentes dispositivos.
+
+---
+
+## 🎯 Objetivos
+
+- Desenvolver um protótipo de portal institucional para órgão público municipal;
+- Aplicar conceitos de desenvolvimento front-end utilizando HTML e CSS;
+- Implementar uma interface responsiva para computadores, tablets e smartphones;
+- Disponibilizar informações institucionais de forma organizada e acessível;
+- Simular canais de atendimento ao cidadão;
+- Integrar serviços externos, como Google Maps e WhatsApp.
+
+---
+
+## ✨ Funcionalidades
+
+### 🏛️ Página Institucional
+Apresenta informações da Secretaria Municipal de Infraestrutura de São Pedro de Alcântara e sua atuação junto à comunidade.
+
+### 🚜 Serviços Prestados
+- Manutenção de Estradas Rurais;
+- Obras Públicas;
+- Iluminação Pública;
+- Conservação e Limpeza Urbana.
+
+### 📰 Área de Notícias
+Espaço destinado à divulgação de ações, obras e comunicados institucionais.
+
+### 🏗️ Galeria de Obras
+Seção preparada para exibição de imagens de obras, máquinas e serviços realizados pela secretaria.
+
+### 📝 Solicitação de Serviços
+Formulário demonstrativo para registro de solicitações relacionadas à infraestrutura municipal.
+
+### 📍 Localização
+Integração com o Google Maps para facilitar o acesso à Secretaria Municipal de Infraestrutura.
+
+### 📱 Atendimento via WhatsApp
+Botões de acesso rápido ao atendimento por meio do WhatsApp, disponíveis na página inicial e de forma flutuante.
 
 ---
 
@@ -54,98 +59,44 @@ O site apresenta:
 
 - HTML5
 - CSS3
-- Google Maps Embed
+- Google Maps Embed API
 - WhatsApp API (`wa.me`)
-
-
----
-
-## ⚙️ Funcionalidades
-
-### 🏛️ Página Institucional
-Apresenta informações da Secretaria Municipal de Infraestrutura e sua missão junto à comunidade.
-
-### 🚜 Serviços Prestados
-- Manutenção de Estradas Rurais
-- Obras Públicas
-- Iluminação Pública
-- Conservação Urbana
-
-### 📰 Notícias
-Área destinada à divulgação de ações, obras e comunicados oficiais.
-
-### 📝 Solicitação de Serviços
-Formulário para que o cidadão possa registrar solicitações e demandas relacionadas à infraestrutura municipal.
-
-### 📍 Localização
-Integração com o Google Maps para facilitar o acesso à Secretaria.
-
-### 📱 WhatsApp
-Atendimento rápido através de botão fixo e botão na seção de contato.
+- Design Responsivo (Responsive Web Design)
 
 ---
 
-## 📞 Contato
+## 💻 Compatibilidade
 
-**Secretaria Municipal de Infraestrutura**  
-São Pedro de Alcântara – Santa Catarina  
-CEP: 88125-000
+O site foi desenvolvido para funcionar nos principais navegadores modernos:
 
-📞 Telefone: (48) 3277-0122  
-📧 E-mail: obras@pmspa.sc.gov.br
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Opera
+- Safari
 
----
+Também possui compatibilidade com:
 
-## ▶️ Como Executar
-
-1. Faça o download do projeto:
-
-```bash
-git clone https://github.com/seu-usuario/secretaria-infraestrutura-spa.git
-```
-
-2. Entre na pasta:
-
-```bash
-cd secretaria-infraestrutura-spa
-```
-
-3. Abra o arquivo:
-
-```text
-index5.html
-```
-
-em qualquer navegador moderno.
-
----
-
-## 🎯 Objetivos do Projeto
-
-- Melhorar a comunicação entre a secretaria e a população;
-- Centralizar informações institucionais;
-- Facilitar o acesso aos canais de atendimento;
-- Disponibilizar informações sobre obras e serviços públicos;
-- Oferecer uma interface moderna, simples e responsiva.
-
----
-
-## 🌐 Responsividade
-
-O site foi desenvolvido utilizando princípios de **Responsive Web Design (RWD)**, garantindo compatibilidade com:
-
-- 💻 Desktop
+- 💻 Computadores
 - 📱 Smartphones
 - 📲 Tablets
 
 ---
 
-## 📄 Licença
+## 👨‍💻 Autor
 
-Este projeto possui caráter institucional e educacional.
+**Pablo Idalgo Gonzalez**
 
-© Prefeitura Municipal de São Pedro de Alcântara - SC  
-Secretaria Municipal de Infraestrutura
+**Curso:** Tecnologia em Análise e Desenvolvimento de Sistemas (TADS)  
 **Instituição:** Universidade do Estado de Santa Catarina (UDESC)  
 **Disciplina:** Estágio Curricular Obrigatório  
 **Ano:** 2026
+
+---
+
+## 📄 Licença
+
+Este projeto possui finalidade **acadêmica e demonstrativa**, sendo desenvolvido como um **mockup institucional** para fins de aprendizagem e aplicação prática dos conhecimentos adquiridos durante o curso de Tecnologia em Análise e Desenvolvimento de Sistemas da UDESC.
+
+**Observação:** Este projeto é um protótipo acadêmico (*mockup*) e não representa, necessariamente, o portal oficial em produção da Secretaria Municipal de Infraestrutura de São Pedro de Alcântara.
+
