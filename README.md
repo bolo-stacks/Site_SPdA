@@ -30,18 +30,6 @@ O site apresenta:
 - Google Maps Embed
 - WhatsApp API (`wa.me`)
 
----
-
-## 📂 Estrutura do Projeto
-
-```text
-/
-├── index5.html
-├── README.md
-└── assets/
-    ├── imagens/
-    └── icones/
-```
 
 ---
 
